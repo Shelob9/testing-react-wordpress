@@ -15,14 +15,16 @@
     "lint:pkg-json": "wp-scripts lint-pkg-json .",
     "start": "wp-scripts start",
     "test:e2e": "wp-scripts test-e2e --config e2e/jest.config.js",
-    "test:unit": "wp-scripts test-unit-js",
+    "test:unit": "wp-scripts test-unit-js --config jest.config.js",
     "env:start": "bash start.sh"
   },
   "dependencies": {
+    "@testing-library/react": "^8.0.4",
     "@wordpress/blocks": "^6.3.0",
     "@wordpress/e2e-test-utils": "^2.1.0",
     "@wordpress/editor": "^9.2.6",
     "@wordpress/element": "^2.4.0",
+    "@wordpress/jest-preset-default": "^4.2.0",
     "@wordpress/server-side-render": "^1.0.0",
     "core-js": "^3.1.4",
     "react-test-renderer": "^16.8.6"
