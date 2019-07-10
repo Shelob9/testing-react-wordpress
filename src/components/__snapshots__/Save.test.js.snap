@@ -5,14 +5,18 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div>
-        Save
+      <div
+        class="wp-blocks-whatever"
+      >
+        Hi Roy
       </div>
     </div>
   </body>,
   "container": <div>
-    <div>
-      Save
+    <div
+      class="wp-blocks-whatever"
+    >
+      Hi Roy
     </div>
   </div>,
   "debug": [Function],

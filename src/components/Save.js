@@ -1,5 +1,5 @@
 import React from "react";
-
-export const Save = ({ attributes, className, clientId }) => {
-  return <div>Save</div>;
+import { DisplayValue } from "./app/DisplayValue";
+export const Save = ({ attributes, className }) => {
+  return <DisplayValue value={attributes.value} className={className} />;
 };
