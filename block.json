@@ -1,22 +1,19 @@
 {
-    "name": "josh/isoblock",
-    "title": "Hydreate Test",
+    "name": "josh/jswp-2019",
+    "title": "Josh Block",
     "category": "common",
     "icon": "star",
-    "description": "Shows warning, error or success notices  ...",
+    "description": "Example",
     "keywords": [
         "alert",
         "message"
     ],
     "textDomain": "josh-isoblock",
     "attributes": {
-        "defaultValue": {
-            "type": "string"
-        },
-        "blockId": {
-            "type": "string"
+        "value": {
+            "type": "string",
+            "default": "Hi Roy"
         }
     },
-    "editorScript": "build/index.js",
-    "script": "build/front.js"
+    "editorScript": "build/index.js"
 }

@@ -1,6 +1,7 @@
 <?php
+
 /**
- * Plugin Name: Hydrate Test
+ * Plugin Name: Josh's JavaScript For WP 2019 Example Code
  */
 
 
