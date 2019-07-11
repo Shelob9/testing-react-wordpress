@@ -8,11 +8,6 @@
   },
   "scripts": {
     "build": "wp-scripts build",
-    "check-engines": "wp-scripts check-engines",
-    "check-licenses": "wp-scripts check-licenses --production",
-    "lint:css": "wp-scripts lint-style '**/*.css'",
-    "lint:js": "wp-scripts lint-js .",
-    "lint:pkg-json": "wp-scripts lint-pkg-json .",
     "start": "wp-scripts start",
     "test:e2e": "wp-scripts test-e2e --config e2e/jest.config.js",
     "test:unit": "wp-scripts test-unit-js --config jest.config.js",

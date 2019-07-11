@@ -1,6 +1,3 @@
-/**
- * WordPress dependencies
- */
 import {
   insertBlock,
   getEditedPostContent,
@@ -10,12 +7,12 @@ import {
 
 describe("Button", () => {
   beforeEach(async () => {
-    await activatePlugin("isoblock/isoblock.php");
+    await activatePlugin("josh-jswp/josh-jswp.php");
   });
 
-  it("can jump focus back & forth", async () => {
+  it("Can add block", async () => {
     await createNewPost();
-    await insertBlock("Hydrate Demo");
+    await insertBlock("Josh Block");
 
     expect(await getEditedPostContent()).toMatchSnapshot();
   });
