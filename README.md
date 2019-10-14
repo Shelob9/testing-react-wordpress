@@ -1,6 +1,8 @@
-# Testing JavaScript In And Around WordPress Part 2 Example Code
+# Testing JavaScript In And Around WordPress: Part 2 Example Code
 
-
+This code goes with:
+* [JavaScript Testing In And Around WordPress - The gitbook](https://react-wordpress-testing.joshpress.net/testing-react-wordpress-blocks)
+* [JavaScript Testing In And Around WordPress - The Slides](https://shelob9.github.io/testing-javascript-in-and-around-wordpress)
 ## Development
 
 * Clone
