@@ -25,4 +25,4 @@ This code goes with:
 A local development server is included. It requires Docker and Docker Compose and is 95% copypated from [WordPress core's local environment](https://github.com/WordPress/wordpress-develop/tree/master/tools/local-env)
 
 * Start server and echo URL
-  * `yarn start:env`
+  * `yarn env:start`
