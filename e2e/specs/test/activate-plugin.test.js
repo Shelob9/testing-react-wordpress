@@ -7,7 +7,7 @@ import {
 
 describe("Button", () => {
   beforeEach(async () => {
-    await activatePlugin("josh-jswp/josh-jswp.php");
+    await activatePlugin("wordpress-plugin/wordpress-plugin.php");
   });
 
   it("Can add block", async () => {

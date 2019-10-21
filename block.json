@@ -1,6 +1,6 @@
 {
-    "name": "josh/jswp-2019",
-    "title": "Josh Block",
+    "name": "saturday-drive/wordpress-plugin",
+    "title": "WordPress Plugin",
     "category": "common",
     "icon": "star",
     "description": "Example",
@@ -8,7 +8,7 @@
         "alert",
         "message"
     ],
-    "textDomain": "josh-isoblock",
+    "textDomain": "wordpress-plugin",
     "attributes": {
         "value": {
             "type": "string",
