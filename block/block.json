@@ -1,0 +1,11 @@
+{
+    "name": "testing-react-wordpress/block",
+    "title": "Testing block",
+    "description": "BLOCK DESCRIPTION",
+    "attributes": {
+        "content": {
+            "type": "string",
+            "default": "Hi Roy"
+        }
+    }
+}
