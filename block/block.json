@@ -7,5 +7,10 @@
             "type": "string",
             "default": "Hi Roy"
         }
+    },
+    "category": "widgets",
+    "icon": "smiley",
+    "supports": {
+        "html": false
     }
 }

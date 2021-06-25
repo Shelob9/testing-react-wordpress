@@ -1,40 +1,11 @@
 
 import { registerBlockType } from "@wordpress/blocks";
-import { InspectorControls, useBlockProps } from "@wordpress/block-editor";
+import Edit from './Edit';
+import Save from './Save';
 
-
-
-const Render = ({ attributes }) => {
-    const blockProps = useBlockProps({
-        className: attributes.className ? attributes.attributes : '',
-    });
-    return (<p {...blockProps}> {attributes.content}</p>);
-}
-
-const Edit = ({ attributes, setAttributes }) => {
-    return (
-        <div>
-            <InspectorControls>
-                Settings
-            </InspectorControls>
-            <div>
-                <Render
-                    attributes={attributes}
-                />
-            </div>
-        </div>
-    )
-}
-const { title, attributes } = require('./block.json');
-registerBlockType('testing-react-wordpress/block', {
-    title,
-    description: 'Hi Roy',
-    category: 'widgets',
-    icon: 'smiley',
-    supports: {
-        html: false,
-    },
-    attributes,
+const blockConfig = require('./block.json');
+registerBlockType(blockConfig.name, {
+    ...blockConfig,
     edit: Edit,
-    save: ({ attributes }) => <Render attributes={attributes} />,
+    save: Save
 });
