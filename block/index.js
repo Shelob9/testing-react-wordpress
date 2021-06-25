@@ -28,7 +28,6 @@ const Edit = ({ attributes, setAttributes }) => {
 const { title, attributes } = require('./block.json');
 registerBlockType('testing-react-wordpress/block', {
     title,
-    apiVersion: 2,
     description: 'Hi Roy',
     category: 'widgets',
     icon: 'smiley',

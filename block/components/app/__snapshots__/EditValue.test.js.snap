@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EditValue componet matches snapshot 1`] = `
+<div>
+  <div
+    class="some-class"
+  >
+    <label
+      for="some-id"
+    >
+      Set Value
+    </label>
+    <input
+      data-testid="some-id"
+      id="some-id"
+      value="Hi Roy"
+    />
+  </div>
+</div>
+`;

@@ -1,6 +1,6 @@
 import { registerBlockType } from "@wordpress/blocks";
-import {Editor} from './components/Editor';
-import {Save} from './components/Save';
+import {Editor} from '../block/components/Editor';
+import {Save} from '../block/components/Save';
 const blockConfig = require("../block.json");
 const { name, title, attributes,category,keywords } = blockConfig;
 
