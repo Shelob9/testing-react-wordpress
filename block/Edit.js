@@ -1,16 +1,21 @@
-import { Placeholder, TextControl } from '@wordpress/components';
+import { TextControl } from '@wordpress/components';
 import { __ } from '@wordpress/i18n';
 import { useBlockProps } from '@wordpress/block-editor';
 
+export const Editor = ({ value, onChange, isSelected }) => (
+    <>
+        {isSelected ?
+            <TextControl
+                value={value}
+                onChange={onChange}
+            /> : <p>{value}</p>
+        }
+    </>
+);
 export default function Edit({ attributes, setAttributes, isSelected }) {
     return (
         <div {...useBlockProps()}>
-            {isSelected ?
-                <TextControl
-                    value={attributes.content}
-                    onChange={(newValue) => setAttributes({ content: newValue })}
-                /> : <p>{attributes.content}</p>
-            }
+            <Editor isSelected={isSelected} value={attributes.content} onChange={(content) => setAttributes({ content })} />
         </div>
     );
 }
