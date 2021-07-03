@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`EditValue componet matches snapshot when not selected 1`] = `
+exports[`Editor componet matches snapshot when not selected 1`] = `
 <div>
   <div
     class="components-base-control css-wdf2ti-Wrapper e1puf3u0"
@@ -19,7 +19,7 @@ exports[`EditValue componet matches snapshot when not selected 1`] = `
 </div>
 `;
 
-exports[`EditValue componet matches snapshot when selected 1`] = `
+exports[`Editor componet matches snapshot when selected 1`] = `
 <div>
   <div
     class="components-base-control css-wdf2ti-Wrapper e1puf3u0"

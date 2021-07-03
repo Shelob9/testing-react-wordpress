@@ -7,7 +7,7 @@ import { render, fireEvent, cleanup } from '@testing-library/react';
 import { Editor } from './Edit';
 
 
-describe("EditValue componet", () => {
+describe("Editor componet", () => {
     afterEach(cleanup);
     it('matches snapshot when selected', () => {
         const onChange = jest.fn();
