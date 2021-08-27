@@ -17,8 +17,8 @@ archive.on('error', function(err){
 archive.pipe(output);
 
 archive.append(fs.createReadStream(
-    __dirname + '/test-react-wordpress.php'
-), { name: 'test-react-wordpress.php' });
+    __dirname + '/testing-react-wordpress.php'
+), { name: 'testing-react-wordpress.php' });
 
 archive.directory('build', '/build');
 
