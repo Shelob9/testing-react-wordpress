@@ -1,28 +1,41 @@
 # Testing JavaScript In And Around WordPress: Part 2 Example Code
 
-This code goes with:
-* [JavaScript Testing In And Around WordPress - The gitbook](https://react-wordpress-testing.joshpress.net/testing-react-wordpress-blocks)
-* [JavaScript Testing In And Around WordPress - The Slides](https://shelob9.github.io/testing-javascript-in-and-around-wordpress)
-## Development
+* [JavaScript Testing In And Around WordPress](https://shelob9.github.io/testing-javascript-in-and-around-wordpress)
 
-* Clone
-   * `git clone git@github.com:Shelob9/isoblock.git && cd isoblock`
-* Install
-  * `yarn`
-* Start
-  * `yarn start`
-* Build For Production
-  * `yarn build`
-* Run Unit Tests
-  * `yarn test:unit`
-  * Uses [`@wordpress/scripts`](https://www.npmjs.com/package/@wordpress/scripts#test-unit-js)
-* Run e2e Tests
-  * `yarn test:e2e`
-  * Must insall local dev environment first.
+## Development Quick Start
+
+- Git clone:
+    - `git clone git@github.com:shelob9/testing-react-wordpress.git`
+- Install.
+    - `yarn`
+- Build JS/CSS
+    - `yarn build`
+- Start JS/CSS for development 
+    - `yarn start`
+- Test changed files
+    - `yarn test --watch`
+- Test all files once
+    - `yarn test`
+    - `yarn test --ci`
+- Create an installable zip file of your plugin.
+  - `yarn zip`
+
+### To Add A New Entry Point
+
+If you want to add additional entry points, for example if you want to add blocks or to have separate JavaScript/ CSS for the front-end, follow these steps:
+
+- Choose a one word handle for the entry point
+- Create a directory named for the handle.
+- Add an index.js file to that directory
+- Add the handle to the array `entryPoints` in webpack.config.js
+- Run `yarn build`
+- Check that `build/$handle.js` and `build/$handle.asset.php` where created.
 
 ## Local Development
 
-A local development server is included. It requires Docker and Docker Compose and is 95% copypated from [WordPress core's local environment](https://github.com/WordPress/wordpress-develop/tree/master/tools/local-env)
+- `docker-compose up -d`
+- [http://localhost:8000/](http://localhost:8000/)
 
-* Start server and echo URL
-  * `yarn env:start`
+## Contributing
+
+Please feel free to [open a pull request](https://github.com/shelob9/test-react-wordpress/pulls) if you would like to contribute.

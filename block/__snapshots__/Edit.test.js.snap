@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Editor componet matches snapshot when not selected 1`] = `
+<div>
+  <div
+    class="components-base-control css-wdf2ti-Wrapper e1puf3u0"
+  >
+    <div
+      class="components-base-control__field css-11vcxb9-StyledField e1puf3u1"
+    >
+      <input
+        class="components-text-control__input"
+        id="inspector-text-control-1"
+        type="text"
+        value="Tacos"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Editor componet matches snapshot when selected 1`] = `
+<div>
+  <div
+    class="components-base-control css-wdf2ti-Wrapper e1puf3u0"
+  >
+    <div
+      class="components-base-control__field css-11vcxb9-StyledField e1puf3u1"
+    >
+      <input
+        class="components-text-control__input"
+        id="inspector-text-control-0"
+        type="text"
+        value="Tacos"
+      />
+    </div>
+  </div>
+</div>
+`;
